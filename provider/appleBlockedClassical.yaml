@@ -1,0 +1,6 @@
+payload:
+  - PROCESS-NAME,News
+  - PROCESS-NAME,TV
+  - PROCESS-NAME,com.apple.atve.amazon.appletv
+  - PROCESS-NAME,com.apple.atve.androidtv.appletv
+  - PROCESS-NAME,com.apple.atve.sony.appletv

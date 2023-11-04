@@ -1,0 +1,25 @@
+payload:
+  - DOMAIN-KEYWORD,apple.co
+  - DOMAIN-KEYWORD,applecomputer
+  - DOMAIN-KEYWORD,appleid
+  - DOMAIN-KEYWORD,applepay
+  - DOMAIN-KEYWORD,applestore
+  - DOMAIN-KEYWORD,beats-bydre
+  - DOMAIN-KEYWORD,beatsbydr
+  - DOMAIN-KEYWORD,beatsd
+  - DOMAIN-KEYWORD,beatshead
+  - DOMAIN-KEYWORD,drdre
+  - DOMAIN-KEYWORD,drebeats
+  - DOMAIN-KEYWORD,icloud
+  - DOMAIN-KEYWORD,imac
+  - DOMAIN-KEYWORD,ipad
+  - DOMAIN-KEYWORD,iphone
+  - DOMAIN-KEYWORD,ipod
+  - DOMAIN-KEYWORD,macbook
+  - DOMAIN-KEYWORD,monsterbeats
+  - DOMAIN-KEYWORD,testflight
+  - PROCESS-NAME,/System/Library/PrivateFrameworks/Lookup.framework/Versions/A/XPCServices/LookupViewService.xpc/Contents/MacOS/LookupViewService
+  - PROCESS-NAME,LookupViewService
+  - PROCESS-NAME,Music
+  - PROCESS-NAME,com.apple.geod
+  - PROCESS-NAME,storedownloadd

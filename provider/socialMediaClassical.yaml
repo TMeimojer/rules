@@ -1,0 +1,15 @@
+payload:
+  - DOMAIN-KEYWORD,apollo
+  - DOMAIN-KEYWORD,discord
+  - DOMAIN-KEYWORD,faceb
+  - DOMAIN-KEYWORD,fbcdn
+  - DOMAIN-KEYWORD,insta
+  - DOMAIN-KEYWORD,nicegram
+  - DOMAIN-KEYWORD,telegram
+  - DOMAIN-KEYWORD,twitter
+  - DOMAIN-KEYWORD,whatsapp
+  - PROCESS-NAME,Telegram.exe
+  - PROCESS-NAME,com.linecorp.linetv
+  - PROCESS-NAME,nekox.messenger
+  - PROCESS-NAME,org.telegram.messenger
+  - PROCESS-NAME,telegram-desktop

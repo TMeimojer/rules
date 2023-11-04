@@ -1,0 +1,15 @@
+payload:
+  - DOMAIN-KEYWORD,.live-
+  - DOMAIN-KEYWORD,.live.
+  - DOMAIN-KEYWORD,.pili-live-
+  - DOMAIN-KEYWORD,akmcdnoverse
+  - DOMAIN-KEYWORD,chuangcachecdnoversea
+  - DOMAIN-KEYWORD,douyin
+  - DOMAIN-KEYWORD,joox
+  - DOMAIN-KEYWORD,kuaishou
+  - DOMAIN-KEYWORD,qiyi
+  - DOMAIN-KEYWORD,youku
+  - PROCESS-NAME,com.iqiyi.i18n
+  - PROCESS-NAME,com.iqiyi.i18n.tv
+  - PROCESS-NAME,com.ktcp.osvideo
+  - PROCESS-NAME,com.qiyi.video

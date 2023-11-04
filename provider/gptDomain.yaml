@@ -1,0 +1,24 @@
+payload:
+  - +.anthropic.com
+  - +.auth0.com
+  - +.bard.google.com
+  - +.challenges.cloudflare.com
+  - +.chatgpt.com
+  - +.claude.ai
+  - +.client-api.arkoselabs.com
+  - +.events.statsigapi.net
+  - +.featuregates.org
+  - +.heypi.com
+  - +.identrust.co.uk
+  - +.identrust.com
+  - +.identrust.net
+  - +.ideogram.ai
+  - +.intercom.com
+  - +.intercom.io
+  - +.intercomassets.com
+  - +.intercomcdn.com
+  - +.oaistatic.com
+  - +.pi.ai
+  - +.sentry.io
+  - +.servd-anthropic-website.b-cdn.net
+  - +.stripe.com

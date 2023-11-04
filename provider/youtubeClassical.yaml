@@ -1,0 +1,8 @@
+payload:
+  - DOMAIN-KEYWORD,youtube
+  - PROCESS-NAME,com.amazon.firetv.youtube
+  - PROCESS-NAME,com.google.android.apps.youtube.music
+  - PROCESS-NAME,com.google.android.videos
+  - PROCESS-NAME,com.google.android.youtube
+  - PROCESS-NAME,com.google.android.youtube.tv
+  - PROCESS-NAME,com.google.android.youtube.tvmusic

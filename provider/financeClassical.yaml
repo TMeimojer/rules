@@ -1,0 +1,11 @@
+payload:
+  - DOMAIN-KEYWORD,binance
+  - DOMAIN-KEYWORD,huobi
+  - DOMAIN-KEYWORD,mastercard
+  - DOMAIN-KEYWORD,metamask
+  - DOMAIN-KEYWORD,okx
+  - DOMAIN-KEYWORD,paypal
+  - DOMAIN-KEYWORD,visa
+  - PROCESS-NAME,Binance.exe
+  - PROCESS-NAME,Huobi.exe
+  - PROCESS-NAME,OKX.exe
