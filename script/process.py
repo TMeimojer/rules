@@ -8,7 +8,7 @@ yaml.indent(sequence=4, offset=2)
 
 os.system('clear')
 
-RULES_DIR = os.path.expanduser('~/Developer/Clash/Rules/rules/provider')
+RULES_DIR = os.path.expanduser('~/Developer/Clash/Rules/rules/provider/')
 files_ip = [
     "localIP.yaml",
     "usIP.yaml",
