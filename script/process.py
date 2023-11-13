@@ -27,6 +27,7 @@ files_ip = [
 ]
 files = [
     "localDomain.yaml",
+    "hkDomain.yaml",
     "gptClassical.yaml",
     "gptDomain.yaml",
     "intranetPenetrationClassical.yaml",

@@ -1578,8 +1578,6 @@ payload:
   - +.cmpassport.com
   - +.cn
   - +.cn88.net
-  - +.cnbeta.com
-  - +.cnbetacdn.com
   - +.cnbksy.com
   - +.cnbksy.net
   - +.cncbinternational.com
@@ -2219,6 +2217,7 @@ payload:
   - +.fetionpic.com
   - +.feucnp.com
   - +.ffbuddy.com
+  - +.fflogs.com
   - +.fgo.wiki
   - +.fhldns.com
   - +.fhldns.net
@@ -3402,6 +3401,7 @@ payload:
   - +.ip.la
   - +.ip138.com
   - +.ipbaohe.com
+  - +.ipfs.tech
   - +.ipip.net
   - +.ipplus360.com
   - +.iprdp.net
@@ -3659,6 +3659,7 @@ payload:
   - +.jkkefv.com
   - +.jksdhgu.com
   - +.jmch12333.com
+  - +.jmcomic.ltd
   - +.jmlk.co
   - +.jmp.gd
   - +.jmstatic.com
@@ -4380,6 +4381,7 @@ payload:
   - +.moulem.com
   - +.moweather.com
   - +.moxz.net
+  - +.mozgcp.net
   - +.mpcloudapp.com
   - +.mpg.de
   - +.mpserverless.com
@@ -5060,6 +5062,7 @@ payload:
   - +.rootjl.com
   - +.rosoyp.com
   - +.routewize.com
+  - +.rpglogs.com
   - +.rrmj.tv
   - +.rsc.org
   - +.rtbasia.com
@@ -5705,6 +5708,7 @@ payload:
   - +.tieyou.com
   - +.tigerbbs.com
   - +.tigerfintech.com
+  - +.tiktokcdn-us.com
   - +.time.nist.gov
   - +.time1.google.com
   - +.time2.google.com
@@ -5804,6 +5808,7 @@ payload:
   - +.ttmeiju.com
   - +.ttnea.com
   - +.ttpod.com
+  - +.ttwstatic.com
   - +.tudou.com
   - +.tudouui.com
   - +.tuer123.com

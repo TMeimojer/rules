@@ -49,6 +49,9 @@ payload:
   - +.18avx.com
   - +.18board.com
   - +.18board.info
+  - +.18comic-god.cc
+  - +.18comic-god.club
+  - +.18comic-god.xyz
   - +.18comic.cc
   - +.18comic.company
   - +.18comic.org
@@ -400,7 +403,10 @@ payload:
   - +.addtoany.com
   - +.adelaidebbs.com
   - +.adguard-dns.com
+  - +.adguard.app
   - +.adguard.com
+  - +.adguard.info
+  - +.adguard.org
   - +.adhelpnews.com
   - +.adidas.com
   - +.admob.com
@@ -409,6 +415,7 @@ payload:
   - +.ads.pubmatic.com
   - +.adsense.com
   - +.adsenseformobileapps.com
+  - +.adtidy.net
   - +.adtidy.org
   - +.adult
   - +.adult-h.com
@@ -11385,4 +11392,14 @@ payload:
   - +.zyzc9.com
   - +.zzcartoon.com
   - +.zzcloud.me
+  - +.zzux.com
   - +.zzycdz.com
+  - a.ppy.sh
+  - assets.ppy.sh
+  - c.ppy.sh
+  - lazer.ppy.sh
+  - m1.ppy.sh
+  - notify.ppy.sh
+  - osu.ppy.sh
+  - sentry.ppy.sh
+  - spectator.ppy.sh

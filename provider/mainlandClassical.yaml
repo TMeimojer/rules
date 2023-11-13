@@ -65,6 +65,7 @@ payload:
   - PROCESS-NAME,BitComet_x64.exe
   - PROCESS-NAME,ClashX
   - PROCESS-NAME,CrashReport.exe
+  - PROCESS-NAME,DownloadSDKServer.exe
   - PROCESS-NAME,DownloadService
   - PROCESS-NAME,DownloadService.exe
   - PROCESS-NAME,DriverInstaller.exe
