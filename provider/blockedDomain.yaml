@@ -2171,6 +2171,7 @@ payload:
   - +.cloudcraze.com
   - +.cloudflare-dns.com
   - +.cloudflare-ech.com
+  - +.cloudflare-esni.com
   - +.cloudflare-gateway.com
   - +.cloudflare-ipfs.com
   - +.cloudflare-quic.com
@@ -2547,6 +2548,7 @@ payload:
   - +.dartpad.dev
   - +.dartsearch-cn.net
   - +.dartsearch.net
+  - +.dasaob.online
   - +.dastrassi.org
   - +.dat.foundation
   - +.data-vocabulary.org
@@ -3451,7 +3453,9 @@ payload:
   - +.fanqiangyakexi.net
   - +.fanqiangzhe.com
   - +.fans-here.com
+  - +.fans17.com
   - +.fansnudes.com
+  - +.fansone.co
   - +.fansta.me
   - +.fansteek.com
   - +.fanswong.com
@@ -5243,6 +5247,7 @@ payload:
   - +.is-a-hunter.com
   - +.isaacmao.com
   - +.isasecret.com
+  - +.isbgpsafeyet.com
   - +.iselect
   - +.isfocus.net
   - +.isgame365.cc
@@ -5690,6 +5695,7 @@ payload:
   - +.korewaeroi.com
   - +.koskade.com
   - +.kotlinlang.org
+  - +.kouwobb.com
   - +.kp
   - +.kpmg
   - +.kpn
@@ -5777,6 +5783,7 @@ payload:
   - +.larsgeorge.com
   - +.lasalle
   - +.lastcombat.com
+  - +.lastfm.freetls.fastly.net
   - +.lastpass.com
   - +.lat
   - +.latamvmwareforum.com
@@ -6844,6 +6851,7 @@ payload:
   - +.mymusclevideo.com
   - +.mynetav.net
   - +.mynetav.org
+  - +.mynetname.net
   - +.mynumber.org
   - +.myoctocat.com
   - +.myparagliding.com
@@ -7280,6 +7288,7 @@ payload:
   - +.nz
   - +.nzchinese.com
   - +.oaistatic.com
+  - +.oaiusercontent.com
   - +.oanda.com
   - +.oanencore.com
   - +.oann.com
@@ -8486,6 +8495,7 @@ payload:
   - +.sanofi
   - +.sanspo.com
   - +.sanwapub.com
+  - +.saobjpg.com
   - +.saoni91.xyz
   - +.saonidh01.cc
   - +.sap
@@ -8514,6 +8524,7 @@ payload:
   - +.say2.info
   - +.saynow.com
   - +.sb
+  - +.sb-cd.com
   - +.sb-telecom.net
   - +.sbi
   - +.sbitravelcard.com
@@ -11091,9 +11102,6 @@ payload:
   - +.yes-news.com
   - +.yesasia.com
   - +.yeyeclub.com
-  - +.yeyuehuachao11.com
-  - +.yeyuehuachao12.com
-  - +.yeyuehuachao13.com
   - +.ygto.com
   - +.ygugu4.com
   - +.yhcw.net
