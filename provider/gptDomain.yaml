@@ -1,9 +1,9 @@
 payload:
+  - +.algolia.net
   - +.anthropic.com
   - +.auth0.com
   - +.bard.google.com
   - +.challenges.cloudflare.com
-  - +.chatgpt.com
   - +.claude.ai
   - +.client-api.arkoselabs.com
   - +.events.statsigapi.net
@@ -19,6 +19,7 @@ payload:
   - +.intercomcdn.com
   - +.oaistatic.com
   - +.oaiusercontent.com
+  - +.observeit.net
   - +.pi.ai
   - +.sentry.io
   - +.servd-anthropic-website.b-cdn.net

@@ -1,4 +1,5 @@
 payload:
   - DOMAIN-KEYWORD,bing
+  - DOMAIN-KEYWORD,chatgpt
   - DOMAIN-KEYWORD,openai
   - DOMAIN-KEYWORD,poe

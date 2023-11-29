@@ -47,6 +47,7 @@ payload:
   - DOMAIN-KEYWORD,naughty
   - DOMAIN-KEYWORD,needforspeed
   - DOMAIN-KEYWORD,nike
+  - DOMAIN-KEYWORD,notion
   - DOMAIN-KEYWORD,nudevista
   - DOMAIN-KEYWORD,nytimes
   - DOMAIN-KEYWORD,oculus
@@ -76,6 +77,7 @@ payload:
   - PROCESS-NAME,BackupandSync
   - PROCESS-NAME,GoogleDriveFS.exe
   - PROCESS-NAME,LastPass
+  - PROCESS-NAME,UnityHub.exe
   - PROCESS-NAME,com.android.vending
   - PROCESS-NAME,com.cbs.app
   - PROCESS-NAME,com.cw.fullepisodes.android

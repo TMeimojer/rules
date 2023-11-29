@@ -1,13 +1,18 @@
 payload:
+  - +.apple-dns.net
+  - +.apple.news
   - +.appledaily.com
   - +.appledaily.com.hk
   - +.appledaily.com.tw
   - +.appledaily.hk
   - +.applefruity.com
   - +.applehealth.com.hk
+  - +.appsto.re
   - +.atnext.com
   - +.bestmallawards.com
+  - +.cdn.apple-cloudkit.com
   - +.deluxe.com.hk
+  - +.digicert.com
   - +.eracom.com.tw
   - +.next.hk
   - +.nextdigital.com.hk
@@ -30,4 +35,5 @@ payload:
   - +.privilege.tw
   - +.sharpdaily.tw
   - +.tomonews.net
+  - +.tv.applemusic.com
   - +.twnextdigital.com

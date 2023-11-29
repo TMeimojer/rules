@@ -17,6 +17,7 @@ payload:
   - DOMAIN-KEYWORD,ipod
   - DOMAIN-KEYWORD,macbook
   - DOMAIN-KEYWORD,monsterbeats
+  - DOMAIN-KEYWORD,smp-device
   - DOMAIN-KEYWORD,testflight
   - PROCESS-NAME,/System/Library/PrivateFrameworks/Lookup.framework/Versions/A/XPCServices/LookupViewService.xpc/Contents/MacOS/LookupViewService
   - PROCESS-NAME,LookupViewService
