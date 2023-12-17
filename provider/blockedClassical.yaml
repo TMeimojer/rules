@@ -34,6 +34,7 @@ payload:
   - DOMAIN-KEYWORD,eromanga
   - DOMAIN-KEYWORD,gcore
   - DOMAIN-KEYWORD,github
+  - DOMAIN-KEYWORD,gitlab
   - DOMAIN-KEYWORD,gmail
   - DOMAIN-KEYWORD,google
   - DOMAIN-KEYWORD,headphones

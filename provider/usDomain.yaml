@@ -177,6 +177,7 @@ payload:
   - +.powershellgallery.com
   - +.projectmurphy.net
   - +.projectsangam.com
+  - +.pscdn.co
   - +.public-trust.com
   - +.pwabuilder.com
   - +.pxt.io
@@ -186,6 +187,7 @@ payload:
   - +.s-msft.com
   - +.s-msn.com
   - +.sankie.net
+  - +.scdn.co
   - +.serverlesslibrary.net
   - +.sfbassets.com
   - +.sfbassets.net
@@ -196,6 +198,8 @@ payload:
   - +.skypeassets.com
   - +.skypeassets.net
   - +.skypeforbusiness.com
+  - +.spoti.fi
+  - +.spotilocal.com
   - +.sprinklesapp.com
   - +.sqlserveronlinux.com
   - +.start.com

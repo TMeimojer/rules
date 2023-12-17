@@ -47,7 +47,6 @@ payload:
   - DOMAIN-KEYWORD,sex
   - DOMAIN-KEYWORD,sofascore
   - DOMAIN-KEYWORD,sphinx
-  - DOMAIN-KEYWORD,spotify
   - DOMAIN-KEYWORD,subscene
   - DOMAIN-KEYWORD,themoviedb
   - DOMAIN-KEYWORD,tiktok
@@ -64,7 +63,6 @@ payload:
   - PROCESS-NAME,com.disney.disneyplus
   - PROCESS-NAME,com.hbo.hbonow
   - PROCESS-NAME,com.hulu.plus
-  - PROCESS-NAME,com.spotify.music
   - PROCESS-NAME,com.taiwanmobile.myVideo
   - PROCESS-NAME,com.taiwanmobile.myVideotv
   - PROCESS-NAME,com.viu.pad

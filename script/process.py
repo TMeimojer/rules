@@ -11,6 +11,7 @@ os.system('clear')
 RULES_DIR = os.path.expanduser('~/Developer/Clash/Rules/rules/provider/')
 files_ip = [
     "manualIP.yaml",
+    "gptIP.yaml",
     "localIP.yaml",
     "usIP.yaml",
     "netflixIP.yaml",

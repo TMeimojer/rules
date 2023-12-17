@@ -362,7 +362,6 @@ payload:
   - +.primevideo.org
   - +.primevideo.tv
   - +.prod.hjholdings.tv
-  - +.pscdn.co
   - +.pv-cdn.net
   - +.pximg.net
   - +.q13.com
@@ -409,7 +408,6 @@ payload:
   - +.s3-ap-southeast-1.amazonaws.com
   - +.sb-cd.com
   - +.sbnation.com
-  - +.scdn.co
   - +.screens-lab.jp
   - +.seattlespheres.com
   - +.sgpstatp.com
@@ -425,8 +423,6 @@ payload:
   - +.speedfantasybid.com
   - +.speedracegear.com
   - +.speedxtra.com
-  - +.spoti.fi
-  - +.spotilocal.com
   - +.star-brasil.com
   - +.star-latam.com
   - +.starott.com
