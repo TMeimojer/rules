@@ -26,3 +26,5 @@ payload:
   - +.servd-anthropic-website.b-cdn.net
   - +.stripe.com
   - +.unleash.codeium.com
+  - +.apis.google.com
+  - +.open-ai-chat-omega.vercel.app

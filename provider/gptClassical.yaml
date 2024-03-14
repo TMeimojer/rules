@@ -3,3 +3,6 @@ payload:
   - DOMAIN-KEYWORD,chatgpt
   - DOMAIN-KEYWORD,openai
   - DOMAIN-KEYWORD,poe
+  - DOMAIN-KEYWORD,generativelanguage
+  - DOMAIN-KEYWORD,colab
+  - DOMAIN-KEYWORD,developerprofiles
