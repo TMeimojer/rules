@@ -1,9 +1,9 @@
 payload:
-  - +.fast.com
   - +.cdnst.net
   - +.cellmaps.com
   - +.ekahau.cloud
   - +.ekahau.com
+  - +.fast.com
   - +.ookla.com
   - +.ooklaserver.net
   - +.pingtest.net

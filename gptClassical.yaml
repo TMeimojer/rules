@@ -1,8 +1,10 @@
 payload:
+  - DOMAIN-KEYWORD,anthropic
   - DOMAIN-KEYWORD,bing
   - DOMAIN-KEYWORD,chatgpt
-  - DOMAIN-KEYWORD,openai
-  - DOMAIN-KEYWORD,poe
-  - DOMAIN-KEYWORD,generativelanguage
+  - DOMAIN-KEYWORD,claude
   - DOMAIN-KEYWORD,colab
   - DOMAIN-KEYWORD,developerprofiles
+  - DOMAIN-KEYWORD,generativelanguage
+  - DOMAIN-KEYWORD,openai
+  - DOMAIN-KEYWORD,poe

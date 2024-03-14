@@ -1,6 +1,4 @@
 payload:
-  - +.Applicationinsights.io
-  - +.Applicationinsights.net
   - +.a-msedge.net
   - +.aadrm.com
   - +.acompli.com
