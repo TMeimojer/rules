@@ -1,4 +1,5 @@
 payload:
   - +.docker.com
   - +.fsm.name
+  - +.jellyfin.org
   - +.viber.com
