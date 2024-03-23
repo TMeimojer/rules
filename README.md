@@ -1,7 +1,7 @@
 ## PR Guide
 
-- To add some domain in `Direct` proxy strategy, edit [mainlandDomain.yaml](https://github.com/TMeimojer/rules/blob/release/mainlandDomain.yaml);
-- To add some domain in `Proxy` proxy strategy, edit [manualDomain.yaml](https://github.com/TMeimojer/rules/blob/release/manualDomain.yaml);
+- To add some domains in `Direct` proxy strategy, edit [mainlandDomain.yaml](https://github.com/TMeimojer/rules/blob/release/mainlandDomain.yaml);
+- To add some domains in `Proxy` proxy strategy, edit [manualDomain.yaml](https://github.com/TMeimojer/rules/blob/release/manualDomain.yaml);
 
 ## How do I add items into rule provider YAML file?
 
