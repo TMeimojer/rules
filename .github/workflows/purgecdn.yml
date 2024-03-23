@@ -1,0 +1,34 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Purge CDN
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "rm" branch
+  push:
+    branches: [ "release" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Runs a single command using the runners shell
+      - name: Purge CDN
+        run: curl -sS -o /dev/null -w "%{http_code} %{url_effective}\n" "https://purge.jsdelivr.net/gh/TMeimojer/rules@release/financeClassical.yaml" "https://purge.jsdelivr.net/gh/TMeimojer/rules@release/financeDomain.yaml" "https://purge.jsdelivr.net/gh/TMeimojer/rules@release/gptClassical.yaml" "https://purge.jsdelivr.net/gh/TMeimojer/rules@release/gptDomain.yaml" "https://purge.jsdelivr.net/gh/TMeimojer/rules@release/gptIP.yaml" "https://purge.jsdelivr.net/gh/TMeimojer/rules@release/hkDomain.yaml" "https://purge.jsdelivr.net/gh/TMeimojer/rules@release/intranetPenetrationClassical.yaml" "https://purge.jsdelivr.net/gh/TMeimojer/rules@release/mainlandDomain.yaml" "https://purge.jsdelivr.net/gh/TMeimojer/rules@release/manualDomain.yaml" "https://purge.jsdelivr.net/gh/TMeimojer/rules@release/manualIP.yaml" "https://purge.jsdelivr.net/gh/TMeimojer/rules@release/speedtestClassical.yaml" "https://purge.jsdelivr.net/gh/TMeimojer/rules@release/speedtestDomain.yaml" "https://purge.jsdelivr.net/gh/TMeimojer/rules@release/usClassical.yaml" "https://purge.jsdelivr.net/gh/TMeimojer/rules@release/usDomain.yaml" "https://purge.jsdelivr.net/gh/TMeimojer/rules@release/usIP.yaml"
+
+      # # Runs a set of commands using the runners shell
+      # - name: Purge CDN
+      #   run: |
+      #     echo Add other actions to build,
+      #     echo test, and deploy your project.
