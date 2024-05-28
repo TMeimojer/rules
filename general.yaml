@@ -1,0 +1,468 @@
+port: 7890
+socks-port: 7891
+mixed-port: 7893
+allow-lan: true
+mode: rule
+geox-url:
+  geoip: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat
+  geosite: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
+  mmdb: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb
+keep-alive-interval: 30
+tcp-concurrent: true
+ipv6: true
+log-level: info
+unified-delay: true
+global-client-fingerprint: chrome
+external-controller: 0.0.0.0:9090
+secret: '123456'
+experimental:
+  ignore-resolve-fail: true
+dns:
+  ipv6: true
+  enable: true
+  listen: 0.0.0.0:53
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+    - 8.8.8.8
+    - 8.8.4.4
+    - 1.0.0.1
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - '*.localdomain'
+    - '*.example'
+    - '*.invalid'
+    - '*.localhost'
+    - '*.test'
+    - '*.local'
+    - '*.home.arpa'
+    - +.stun.*.*
+    - +.stun.*.*.*
+    - +.stun.*.*.*.*
+    - +.stun.*.*.*.*.*
+    - lens.l.google.com
+    - '*.n.n.srv.nintendo.net'
+    - +.stun.playstation.net
+    - xbox.*.*.microsoft.com
+    - '*.*.xboxlive.com'
+    - '*.msftncsi.com'
+    - '*.msftconnecttest.com'
+    - '*.mcdn.bilivideo.cn'
+    - WORKGROUP
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  fallback:
+    - https://dns.cloudflare.com/dns-query
+    - https://public.dns.iij.jp/dns-query
+    - https://jp.tiar.app/dns-query
+    - https://jp.tiarap.org/dns-query
+    - tls://dot.tiar.app
+    - https://1.0.0.1/dns-query
+    - tls://dns.google
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - gfw
+    ipcidr:
+      - 240.0.0.0/4
+    domain:
+      - +.google.+
+      - +.googleapis.com
+      - +.googlevideo.com
+      - +.gstatic.cn
+      - +.gstatic.com
+      - +.gvt1.com
+      - +.gvt2.com
+      - +.recaptcha.net
+      - +.twimg.com
+      - +.twitter.com
+      - +.youtube.com
+      - +.ytimg.com
+      - twitter.com
+      - t.co
+      - t.me
+      - telegra.ph
+      - youtu.be
+  nameserver-policy:
+    geosite:cn,private:
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
+    geosite:category-ads-all: rcode://success
+    '*.alibaba.cn': 223.5.5.5
+    '*.alibaba.com.cn': 223.5.5.5
+    '*.china.alibaba.com': 223.5.5.5
+    '*.1688.com': 223.5.5.5
+    '*.taobao.com': 223.5.5.5
+    '*.tbcache.com': 223.5.5.5
+    '*.tmall.com': 223.5.5.5
+    '*.alicdn.com': 223.5.5.5
+    '*.aliyundrive.com': 223.5.5.5
+    '*.aliyun.*': 223.5.5.5
+    '*.aliyuncdn.*': 223.5.5.5
+    '*.aliyunddos????.com': 223.5.5.5
+    '*.aliyuncs.com': 223.5.5.5
+    '*.aliyundunwaf.com': 223.5.5.5
+    '*.aliapp.com': 223.5.5.5
+    '*.aliapp.org': 223.5.5.5
+    '*.alibabausercontent.com': 223.5.5.5
+    '*.mmstat.com': 223.5.5.5
+    tb.cn: 223.5.5.5
+hosts:
+  '*imap.mail.icloud.com.cn': 17.56.9.15
+  '*smtp.mail.icloud.com.cn': 17.56.8.137
+tun:
+  enable: true
+  stack: mixed
+  dns-hijack:
+    - 0.0.0.0:53
+    - tcp://any:53
+  auto-route: true
+  auto-detect-interface: true
+  mtu: 9000
+proxies:
+
+proxy-groups:
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 普通代理
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 普通代理
+  - name: 🚀 普通代理
+    type: select
+    proxies:
+      - 🔗 Azure 均衡
+      - ㊙️ 特殊链接
+  - name: 🛑 广告拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🤖️ GPT
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    lazy: true
+    proxies:
+      - KC01
+      - SG01
+      - SG02
+      - JP01
+      - JP02
+      - US01
+  - name: ㊙️ 特殊链接
+    type: select
+    proxies:
+      - DIRECT
+      - HK01
+      - HK02
+      - SG01
+      - SG02
+      - KC01
+      - JP01
+      - JP02
+      - US01
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - DIRECT
+      - 🇺🇸 美国
+      - 🚀 普通代理
+  - name: 🔗 Azure 均衡
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    strategy: consistent-hashing
+    lazy: true
+    proxies:
+      - HK01
+      - HK02
+      - KC01
+      - SG01
+      - SG02
+      - JP01
+      - JP02
+      - US01
+  - name: 🇭🇰 香港
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    strategy: consistent-hashing
+    lazy: true
+    proxies:
+      - HK01
+      - HK02
+  - name: 🇸🇬 新加坡
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    strategy: consistent-hashing
+    lazy: true
+    proxies:
+      - SG01
+      - SG02
+  - name: 🇰🇷 韩国
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    strategy: consistent-hashing
+    lazy: true
+    proxies:
+      - KC01
+  - name: 🇯🇵 日本
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    strategy: consistent-hashing
+    lazy: true
+    proxies:
+      - JP01
+      - JP02
+  - name: 🇺🇸 美国
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    strategy: consistent-hashing
+    lazy: true
+    proxies:
+      - US01
+  - name: 🕳️ 内网穿透
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 普通代理
+rules:
+  - RULE-SET,applications,🎯 全球直连
+  - RULE-SET,private,🎯 全球直连
+  - RULE-SET,reject,🛑 广告拦截
+  - RULE-SET,Speedtest,㊙️ 特殊链接
+  - RULE-SET,Speedtest_Domain,㊙️ 特殊链接
+  - RULE-SET,GPT,🤖️ GPT
+  - RULE-SET,GPT_Domain,🤖️ GPT
+  - RULE-SET,GPT_IP,🤖️ GPT
+  - RULE-SET,US,🇺🇸 美国
+  - RULE-SET,US_Domain,🇺🇸 美国
+  - RULE-SET,US_IP,🇺🇸 美国
+  - RULE-SET,HK_Domain,🇭🇰 香港
+  - RULE-SET,Mainland_Domain,🎯 全球直连
+  - RULE-SET,Manual_Domain,🚀 普通代理
+  - RULE-SET,Manual_IP,🚀 普通代理
+  - RULE-SET,icloud,🍎 苹果服务
+  - RULE-SET,apple,🍎 苹果服务
+  - RULE-SET,FRP,🕳️ 内网穿透
+  - RULE-SET,Finance,㊙️ 特殊链接
+  - RULE-SET,Finance_Domain,㊙️ 特殊链接
+  - RULE-SET,google,🚀 普通代理
+  - RULE-SET,proxy,🚀 普通代理
+  - RULE-SET,direct,🎯 全球直连
+  - RULE-SET,lancidr,🎯 全球直连
+  - RULE-SET,cncidr,🎯 全球直连
+  - RULE-SET,telegramcidr,🚀 普通代理
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,🎯 全球直连
+  - MATCH,🐟 漏网之鱼
+
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt
+    path: ./ruleset/reject.yaml
+    interval: 86400
+
+  icloud:
+    type: http
+    behavior: domain
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/icloud.txt
+    path: ./ruleset/icloud.yaml
+    interval: 86400
+
+  apple:
+    type: http
+    behavior: domain
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt
+    path: ./ruleset/apple.yaml
+    interval: 86400
+
+  google:
+    type: http
+    behavior: domain
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/google.txt
+    path: ./ruleset/google.yaml
+    interval: 86400
+
+  proxy:
+    type: http
+    behavior: domain
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt
+    path: ./ruleset/proxy.yaml
+    interval: 86400
+
+  direct:
+    type: http
+    behavior: domain
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt
+    path: ./ruleset/direct.yaml
+    interval: 86400
+
+  private:
+    type: http
+    behavior: domain
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt
+    path: ./ruleset/private.yaml
+    interval: 86400
+
+  gfw:
+    type: http
+    behavior: domain
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt
+    path: ./ruleset/gfw.yaml
+    interval: 86400
+
+  tld-not-cn:
+    type: http
+    behavior: domain
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt
+    path: ./ruleset/tld-not-cn.yaml
+    interval: 86400
+
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt
+    path: ./ruleset/telegramcidr.yaml
+    interval: 86400
+
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/lancidr.txt
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+
+  applications:
+    type: http
+    behavior: classical
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt
+    path: ./ruleset/applications.yaml
+    interval: 86400
+
+  FRP:
+    type: http
+    behavior: classical
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/TMeimojer/rules/release/intranetPenetrationClassical.yaml
+    path: ./ruleset/FRP.yaml
+    interval: 86400
+
+  Finance:
+    type: http
+    behavior: classical
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/TMeimojer/rules/release/financeClassical.yaml
+    path: ./ruleset/Finance.yaml
+    interval: 86400
+
+  Finance_Domain:
+    type: http
+    behavior: domain
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/TMeimojer/rules/release/financeDomain.yaml
+    path: ./ruleset/Finance_Domain.yaml
+    interval: 86400
+
+  GPT:
+    type: http
+    behavior: classical
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/TMeimojer/rules/release/gptClassical.yaml
+    path: ./ruleset/GPT.yaml
+    interval: 86400
+
+  GPT_Domain:
+    type: http
+    behavior: domain
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/TMeimojer/rules/release/gptDomain.yaml
+    path: ./ruleset/GPT_Domain.yaml
+    interval: 86400
+
+  GPT_IP:
+    type: http
+    behavior: ipcidr
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/TMeimojer/rules/release/gptIP.yaml
+    path: ./ruleset/GPT_IP.yaml
+    interval: 86400
+
+  HK_Domain:
+    type: http
+    behavior: domain
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/TMeimojer/rules/release/hkDomain.yaml
+    path: ./ruleset/HK_Domain.yaml
+    interval: 86400
+
+  Mainland_Domain:
+    type: http
+    behavior: domain
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/TMeimojer/rules/release/mainlandDomain.yaml
+    path: ./ruleset/Mainland_Domain.yaml
+    interval: 86400
+
+  Manual_Domain:
+    type: http
+    behavior: domain
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/TMeimojer/rules/release/manualDomain.yaml
+    path: ./ruleset/Manual_Domain.yaml
+    interval: 86400
+
+  Manual_IP:
+    type: http
+    behavior: ipcidr
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/TMeimojer/rules/release/manualIP.yaml
+    path: ./ruleset/Manual_IP.yaml
+    interval: 86400
+
+  Speedtest:
+    type: http
+    behavior: classical
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/TMeimojer/rules/release/speedtestClassical.yaml
+    path: ./ruleset/Speedtest.yaml
+    interval: 86400
+
+  Speedtest_Domain:
+    type: http
+    behavior: domain
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/TMeimojer/rules/release/speedtestDomain.yaml
+    path: ./ruleset/Speedtest_Domain.yaml
+    interval: 86400
+
+  US:
+    type: http
+    behavior: classical
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/TMeimojer/rules/release/usClassical.yaml
+    path: ./ruleset/US.yaml
+    interval: 86400
+
+  US_Domain:
+    type: http
+    behavior: domain
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/TMeimojer/rules/release/usDomain.yaml
+    path: ./ruleset/US_Domain.yaml
+    interval: 86400
+
+  US_IP:
+    type: http
+    behavior: ipcidr
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/TMeimojer/rules/release/usIP.yaml
+    path: ./ruleset/US_IP.yaml
+    interval: 86400
