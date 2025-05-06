@@ -5,6 +5,7 @@ payload:
   - DOMAIN-KEYWORD,claude
   - DOMAIN-KEYWORD,colab
   - DOMAIN-KEYWORD,developerprofiles
+  - DOMAIN-KEYWORD,gemini
   - DOMAIN-KEYWORD,generativelanguage
   - DOMAIN-KEYWORD,open-ai
   - DOMAIN-KEYWORD,openai
