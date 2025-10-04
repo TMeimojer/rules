@@ -1,6 +1,7 @@
 payload:
   - +.arc.net
   - +.azureedge.net
+  - +.bresink.com
   - +.charliemonroe.net
   - +.codeweavers.com
   - +.docker.com
