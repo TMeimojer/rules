@@ -10,6 +10,7 @@ payload:
   - +.ls.apple.com
   - +.mre.red
   - +.nodeloc.com
+  - +.packyapi.com
   - +.qifangcat.top
   - +.pttime.online
   - +.pttime.org
@@ -21,6 +22,7 @@ payload:
   - +.steamcontent.com
   - +.steamstatic.com
   - +.yucheng.life
+  - +.work.weixin.qq.com
   - api.myip.la
   - api.ip.sb
   - dl.google.com

@@ -48,6 +48,9 @@ dns:
     - "*.msftncsi.com"
     - "*.msftconnecttest.com"
     - "*.mcdn.bilivideo.cn"
+    - +.aihubmix.com
+    - +.packyapi.com
+    - +.work.weixin.qq.com
     - +.mre.red
     - +.c-1o.top
     - WORKGROUP
